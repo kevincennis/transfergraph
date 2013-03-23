@@ -65,7 +65,7 @@ typeof function( window, undefined ) {
     ctx.beginPath()
     ctx.moveTo(height, ( curve[i++] + 1 ) * width / 2)
     for (; i < len; ++i ) 
-      ctx.lineTo(height - i, ( curve[i++] + 1 ) * width / 2)
+      ctx.lineTo(height - i, ( curve[i] + 1 ) * width / 2)
     ctx.stroke()
   }
 }(this)
